@@ -5,7 +5,9 @@
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (http://kemitchell.com)",
   "bugs": "https://github.com/kemitchell/english-list.js/issues",
   "devDependencies": {
+    "defence-cli": "^2.0.1",
     "literate-assertions": "^0.1.1",
+    "replace-require-self": "^1.1.1",
     "standard": "^10.0.3",
     "standard-markdown": "^4.0.2"
   },

@@ -1,35 +1,44 @@
-english-list.js
-===============
-
-[![NPM version](https://img.shields.io/npm/v/english-list.svg)](https://www.npmjs.com/package/english-list)
-[![build status](https://img.shields.io/travis/kemitchell/english-list.js.svg)](http://travis-ci.org/kemitchell/english-list.js)
-
 Make "X, Y, and Z"-style lists from arrays.
 
 ```javascript
-var list = require('english-list');
+var list = require('english-list')
+var assert = require('assert')
 
-list('and', ['John']);
-// === 'John'
+assert.equal(
+  list('and', ['John']),
+  'John'
+)
 
-list('and', ['John', 'Paul']);
-// === 'John and Paul'
+assert.equal(
+  list('and', ['John', 'Paul']),
+  'John and Paul'
+)
 
-list('and', ['John', 'Paul', 'George']);
-// === 'John, Paul, and George'
+assert.equal(
+  list('and', ['John', 'Paul', 'George']),
+  'John, Paul, and George'
+)
 
-list('and', ['John', 'Paul', 'George'], false);
-// === 'John, Paul and George'
+assert.equal(
+  list('and', ['John', 'Paul', 'George'], false),
+  'John, Paul and George'
+)
 
-list('and', ['John', 'Paul', 'George'], true);
-// === 'John, Paul, and George'
+assert.equal(
+  list('and', ['John', 'Paul', 'George'], true),
+  'John, Paul, and George'
+)
 
-list('or', ['John', 'Paul', 'George']);
-// === 'John, Paul, or George'
+assert.equal(
+  list('or', ['John', 'Paul', 'George']),
+  'John, Paul, or George'
+)
 
-list('and', null);
-// throws TypeError
+assert.throws(function () {
+  list('and', null)
+}, TypeError)
 
-list('and', []);
-// throws Error
+assert.throws(function () {
+  list('and', [])
+}, Error)
 ```
