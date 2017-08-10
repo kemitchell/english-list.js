@@ -5,9 +5,6 @@
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (http://kemitchell.com)",
   "bugs": "https://github.com/kemitchell/english-list.js/issues",
   "devDependencies": {
-    "check-versions": "^1.0.0",
-    "jscs": "^1.12.0",
-    "jshint": "^2.7.0",
     "literate-assertions": "^0.1.1"
   },
   "homepage": "https://github.com/kemitchell/english-list.js",
@@ -24,10 +21,7 @@
   "main": "english-list.js",
   "repository": "kemitchell/english-list.js",
   "scripts": {
-    "check": "check-versions --check-module",
-    "lint": "jshint english-list.js && jscs english-list.js",
-    "pre-commit": "npm run check && npm run lint && npm run test",
-    "travis-ci": "npm run pre-commit",
+    "travis-ci": "npm run test",
     "test": "literate-assertions < README.md | sed 's!english-list!./!g' | node"
   }
 }
