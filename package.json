@@ -1,7 +1,7 @@
 {
   "name": "english-list",
   "description": "make \"X, Y, and Z\"-style lists from arrays",
-  "version": "1.0.0-prerelease-1",
+  "version": "1.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (http://kemitchell.com)",
   "bugs": "https://github.com/kemitchell/english-list.js/issues",
   "devDependencies": {
