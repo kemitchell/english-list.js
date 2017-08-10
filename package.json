@@ -23,7 +23,7 @@
   "repository": "kemitchell/english-list.js",
   "scripts": {
     "travis-ci": "npm run test",
-    "test": "literate-assertions < README.md | sed 's!english-list!./!g' | node",
-    "lint": "standard && standard-markdown"
+    "lint": "standard && standard-markdown",
+    "test": "defence -i javascript README.md | replace-require-self | node"
   }
 }
