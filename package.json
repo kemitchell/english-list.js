@@ -5,7 +5,9 @@
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (http://kemitchell.com)",
   "bugs": "https://github.com/kemitchell/english-list.js/issues",
   "devDependencies": {
-    "literate-assertions": "^0.1.1"
+    "literate-assertions": "^0.1.1",
+    "standard": "^10.0.3",
+    "standard-markdown": "^4.0.2"
   },
   "homepage": "https://github.com/kemitchell/english-list.js",
   "keywords": [
@@ -21,6 +23,7 @@
   "repository": "kemitchell/english-list.js",
   "scripts": {
     "travis-ci": "npm run test",
-    "test": "literate-assertions < README.md | sed 's!english-list!./!g' | node"
+    "test": "literate-assertions < README.md | sed 's!english-list!./!g' | node",
+    "lint": "standard && standard-markdown"
   }
 }
