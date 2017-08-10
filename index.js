@@ -32,5 +32,3 @@ module.exports = function (conjunction, array, serialComma) {
     )
   }
 }
-
-module.exports.version = '1.0.0-prerelease-1'
