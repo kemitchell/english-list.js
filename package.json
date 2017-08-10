@@ -21,7 +21,7 @@
     "list",
     "natural"
   ],
-  "license": "Apache-2.0",
+  "license": "MIT",
   "repository": "kemitchell/english-list.js",
   "scripts": {
     "travis-ci": "npm run test",
