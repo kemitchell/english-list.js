@@ -18,7 +18,6 @@
     "natural"
   ],
   "license": "Apache-2.0",
-  "main": "english-list.js",
   "repository": "kemitchell/english-list.js",
   "scripts": {
     "travis-ci": "npm run test",
